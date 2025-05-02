@@ -1,0 +1,88 @@
+  html {
+    scroll-behavior: smooth;
+}
+.top-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.toggle-btn{
+    display: flex;
+    background-color: transparent;
+    border: 0.5px dotted gray;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+body.light-mode {
+    background-color: rgb(243, 237, 237);
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+body.dark-mode {
+    color: white;
+    background-color:  rgb(20, 16, 16);
+    
+}
+.toggle-btn {
+    cursor: pointer;
+}
+.toggle:focus {
+    outline: none;
+}
+h2 {
+    margin-top: 0;
+    font-size: 15px;
+}
+.screen {
+    margin-left: 3px;
+    width: 99.9%;
+    height: 40px;
+    border-bottom: 0.5px gray solid;
+    margin-bottom: 10px;
+}
+.main-calculator {
+    display: flex;
+}
+input {
+    text-align: right;
+    width: 99.2%;
+    cursor: pointer;
+    height: 30px;
+    border: none;
+}
+i {
+    font-size: 8px;
+    color: rgb(255, 123, 0);
+}
+.buttons {
+    display: flex; 
+    padding: 3px;
+    padding-bottom: -5px;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+.btn {
+    flex: 1;
+    border: 0.5px dotted gray;
+    background-color: rgb(20, 16, 16);
+    color: white;
+    flex-grow: 1;  /*allows button to grow if there's extra space*/
+    flex-shrink: 1; /*allows button to shrink if there's not enough space*/
+    flex-basis: calc(25% - 10px); /*setsthe initial width 100% / 4 = 25% - 10px for gap */
+    font-size: 10px;
+    min-width: 20px;
+    gap: 10px;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: lightgray;
+    color: black;
+}
