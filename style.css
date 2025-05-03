@@ -16,9 +16,6 @@ html {
     border-radius: 50%;
     width: 3vw;
     height: 3vw;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    margin-top: -5px;
 }
 body.light-mode {
     background-color: rgb(243, 237, 237);
