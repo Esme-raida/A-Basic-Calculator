@@ -14,8 +14,8 @@ html {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    width: 5vw;
-    height: 5vw;
+    width: 3vw;
+    height: 3vw;
     margin-bottom: 10px;
 }
 body.light-mode {
