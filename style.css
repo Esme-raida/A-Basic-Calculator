@@ -10,12 +10,8 @@ html {
 .toggle-btn{
     display: flex;
     background-color: transparent;
-    border: 0.5px dotted gray;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    width: 3vw;
-    height: 3vw;
+    border: none;
+    padding-top: 5px;
 }
 body.light-mode {
     background-color: rgb(243, 237, 237);
