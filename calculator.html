@@ -10,32 +10,32 @@
     <body class="light-mode">
         <div class="top-section">
             <h2>CALC </h2>
-            <button class="toggle-btn"><i id="sunIcon" class="fas fa-sun sun-icon"></i><i id="moonIcon" class="fas fa-moon moon-icon"></i></button>
+            <button class="toggle-btn" title="Mode toggle"><i id="sunIcon" class="fas fa-sun sun-icon"></i><i id="moonIcon" class="fas fa-moon moon-icon"></i></button>
         </div>
         <div class="screen">
             <input type="text" id="display" readonly style="color: black;">
         </div>
             <div class="buttons">
-                <button class="btn clear-btn" style="color: rgb(255, 123, 0);" id="btnId">C</button>
-                <button class="btn backspace-btn"><i class="fas fa-backspace"></i></button>
-                <button class="btn operator-btns" data-value="%"><i class="fas fa-percent"></i></button>
-                <button class="btn operator-btns" data-value="/"><i class="fas fa-divide"></i></button>
-                <button class="btn num-btns">7</button>
-                <button class="btn num-btns">8</button>
-                <button class="btn num-btns">9</button>
-                <button class="btn operator-btns" data-value="*"><i class="fas fa-times"></i></button>
-                <button class="btn num-btns">4</button>
-                <button class="btn num-btns">5</button>
-                <button class="btn num-btns">6</button>
-                <button class="btn operator-btns" data-value="-"><i class="fas fa-minus"></i></button>
-                <button class="btn num-btns">1</button>
-                <button class="btn num-btns">2</button>
-                <button class="btn num-btns">3</button>
-                <button class="btn operator-btns" data-value="+"><i class="fas fa-plus"></i></button>
-                <button class="btn sync-btn"><i class="fas fa-sync"></i></button>
-                <button class="btn num-btns">0</button>
-                <button class="btn num-btns">.</button>
-                <button class="btn operator-btns" data-value="="><i class="fas fa-equals"></i></button>
+                <button class="btn clear-btn" data-key="Delete" style="color: rgb(255, 123, 0);" id="btnId" title="Clear">C</button>
+                <button class="btn backspace-btn" data-key="Backspace" title="Backspace"><i class="fas fa-backspace"></i></button>
+                <button class="btn operator-btns" data-key="%" data-value="%" title="Modulus Operator"><i class="fas fa-percent"></i></button>
+                <button class="btn operator-btns" data-key="/" data-value="/" title="Division"><i class="fas fa-divide"></i></button>
+                <button class="btn num-btns" data-key="7">7</button>
+                <button class="btn num-btns" data-key="8">8</button>
+                <button class="btn num-btns" data-key="9">9</button>
+                <button class="btn operator-btns" data-key="*" data-value="*" title="Multiplication"><i class="fas fa-times"></i></button>
+                <button class="btn num-btns" data-key="4">4</button>
+                <button class="btn num-btns" data-key="5">5</button>
+                <button class="btn num-btns" data-key="6">6</button>
+                <button class="btn operator-btns" data-key="-" data-value="-" title="Subtraction"><i class="fas fa-minus"></i></button>
+                <button class="btn num-btns" data-key="1">1</button>
+                <button class="btn num-btns" data-key="2">2</button>
+                <button class="btn num-btns" data-key="3">3</button>
+                <button class="btn operator-btns" data-key="+" data-value="+" title="Addition"><i class="fas fa-plus"></i></button>
+                <button class="btn sync-btn" title="Scientific-Mode toggle"><i class="fas fa-sync"></i></button>
+                <button class="btn num-btns" data-key="0">0</button>
+                <button class="btn num-btns" data-key=".">.</button>
+                <button class="btn operator-btns" data-key="="|| data-key="Enter" data-value="=" title="equals"><i class="fas fa-equals"></i></button>
         </div>
 
         <script src="calculator.js"></script>
