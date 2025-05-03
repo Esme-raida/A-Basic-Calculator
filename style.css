@@ -17,6 +17,7 @@ html {
     width: 3vw;
     height: 3vw;
     margin-bottom: 10px;
+    margin-top: 0;
 }
 body.light-mode {
     background-color: rgb(243, 237, 237);
