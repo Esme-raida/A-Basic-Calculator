@@ -13,9 +13,6 @@ html {
     border: 0.5px dotted gray;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
 }
 body.light-mode {
     background-color: rgb(243, 237, 237);
