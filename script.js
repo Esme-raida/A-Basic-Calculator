@@ -103,6 +103,11 @@ document.addEventListener('keydown', (event) => {
                 setTimeout(() => {
                     display.value = '';
                 }, 2000); 
+            } else if(display.value === '='){
+                display.value = 'Please enter a valid expression!'
+                setTimeout(() => {
+                    display.value = '';
+                }, 2000); 
             } else {
                 const result = eval(display.value);
                 display.value = '';
