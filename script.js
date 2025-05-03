@@ -38,13 +38,18 @@ operatorButtons.forEach(operatorElement  => {
         if (operator !== '=') { 
             display.value += operator;
         } else {
-                //Using eval to evaluate the expression in the display
-        if (display.value.trim() !== '') {
-            try {
-                const result = eval(display.value);
-                display.value += result;
-            } 
-            catch(error) {
+            try{
+                if (display.value === '') {
+                    display.value = 'Please enter a valid expression!';
+                    setTimeout(() => {
+                        display.value ='';
+                    }, 2000);
+                } else { 
+                    const result = eval(display.value);
+                    display.value = '';
+                    display.value += result;
+                }
+            } catch(error) {
                 //If the expression is invalid, show an error message
                 display.value = 'Invalid Expression!';
                 setTimeout(() => {
@@ -101,11 +106,6 @@ document.addEventListener('keydown', (event) => {
                 }, 2000);
             } else if(display.value.includes('/0')){
                 display.value = 'Cannot divide by zero!'
-                setTimeout(() => {
-                    display.value = '';
-                }, 2000); 
-            } else if(display.value === '='){
-                display.value = 'Please enter a valid expression!'
                 setTimeout(() => {
                     display.value = '';
                 }, 2000); 
