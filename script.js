@@ -38,12 +38,13 @@ operatorButtons.forEach(operatorElement  => {
         if (operator !== '=') { 
             display.value += operator;
         } else {
-            try{
                 //Using eval to evaluate the expression in the display
-            const result = eval(display.value);
-            display.value = '';
-            display.value += result;
-            } catch(error) {
+        if (display.value.trim() !== '') {
+            try {
+                const result = eval(display.value);
+                display.value += result;
+            } 
+            catch(error) {
                 //If the expression is invalid, show an error message
                 display.value = 'Invalid Expression!';
                 setTimeout(() => {
